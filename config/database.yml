@@ -82,3 +82,4 @@ production:
   username: <%= ENV['MYSQL_USERNAME'] %>
   password: <%= ENV['MYSQL_PASSWORD'] %>
   host: <%= ENV['MYSQL_ADDRESS'] || ENV['MYSQL_HOST'] %>
+  advisory_locks: false
