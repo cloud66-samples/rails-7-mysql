@@ -14,12 +14,14 @@
     </tr>
   </thead>
   <tbody>
-    <% ::User.all.each do |user| %>
+    <% @users.each do |user| %>
     <tr>
       <th scope="row"><%= user.email %></th>
       <td><%= user.uuid %></td>
     </tr>
     <% end %>
 </table>
+
+<%= will_paginate @users %>
 
 <%= button_to "Create New User", users_path %>
