@@ -1,0 +1,7 @@
+last_thing:
+- command: cd /home/cloud66-user && yarn cache dir && ls -al $(yarn cache dir) && yarn cache clean && ls -la $(yarn cache dir)
+  target: rails
+  apply_during: all
+  execute: true
+  sudo: false
+  run_on: all_servers
